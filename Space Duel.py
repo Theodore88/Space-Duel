@@ -42,9 +42,6 @@ LASER_SOUND = pygame.mixer.Sound(os.path.join('Sounds and Images','Laser Sound.w
 HIT_SOUND = pygame.mixer.Sound(os.path.join('Sounds and Images','Hit Sound.wav'))
 GAME_OVER_SOUND = pygame.mixer.Sound(os.path.join('Sounds and Images','Game Over Sound.wav'))
 
-# mixer.music.load('theme.wav')
-# mixer.music.play(-1)
-
 
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 
