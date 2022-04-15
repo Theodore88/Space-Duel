@@ -54,10 +54,10 @@ WHITE_HIT = pygame.USEREVENT + 2
 def win(winner_text):
     text = WINNER_FONT.render(winner_text, 1, BLUE)
     if winner_text == "WHITE WINS!":
-        WIN.blit(text, ((WIDTH//2) - 280 , (HEIGHT//2) - 100 ))
+        WIN.blit(text, ((WIDTH//2) - 240 , (HEIGHT//2) - 80 ))
 
     if winner_text == "BLACK WINS!":
-        WIN.blit(text, ((WIDTH//2) - 280 , (HEIGHT//2) - 100 ))
+        WIN.blit(text, ((WIDTH//2) - 240 , (HEIGHT//2) - 80 ))
     
     pygame.display.update()
     pygame.time.delay(1500)
@@ -132,12 +132,9 @@ def shooting(black_ship_rect, white_ship_rect):
                 white_ship_bullets_list.remove(bullet)
                 HIT_SOUND.play()
                 
-
-
-
 def main():
     black_ship_rect = pygame.Rect(160,300, BLACK_SHIP_WIDITH, BLACK_SHIP_HEIGHT)  
-    white_ship_rect = pygame.Rect(1200,290, WHITE_SHIP_WIDITH, WHITE_SHIP_HEIGHT)
+    white_ship_rect = pygame.Rect(1250,290, WHITE_SHIP_WIDITH, WHITE_SHIP_HEIGHT)
     black_health = 10
     white_health = 10
     clock = pygame.time.Clock()
